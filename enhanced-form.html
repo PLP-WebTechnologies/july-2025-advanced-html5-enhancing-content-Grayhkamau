@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML5 Assignment with Lists, Tables, Media, and Validated Forms.">
+  <meta name="author" content="Humphrey Kamau">
+  <title>HTML5 Assignment with Lists, Tables, Media, and Validated Forms.</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Form Demo</h1>
+    <p>This page demonstrates the use of lists, tables, media, and validated HTML5 forms.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Top 5 Web Development Skills</h2>
+      <ol>
+        <li>HTML & Semantic Structure</li>
+        <li>CSS for Styling</li>
+        <li>JavaScript Fundamentals</li>
+        <li>Responsive Design</li>
+        <li>Accessibility & SEO</li>
+      </ol>
+
+      <h3>Essential Tools for Developers</h3>
+      <ul>
+        <li>Code Editor (e.g., VS Code)</li>
+        <li>Version Control (e.g., Git)</li>
+        <li>Browser Developer Tools</li>
+        <li>Package Managers (e.g., npm)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Upcoming Web Workshops</h2>
+      <table border="1" cellpadding="8">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Topic</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aug 10, 2025</td>
+            <td>Intro to HTML5</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>Aug 17, 2025</td>
+            <td>Responsive Layouts</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Aug 24, 2025</td>
+            <td>Accessibility Best Practices</td>
+            <td>Advanced</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Media -->
+    <section>
+      <h2>Featured Media</h2>
+
+      <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Placeholder image of HTML code" width="300">
+        <figcaption>Figure 1: Example of semantic HTML code.</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video width="320" height="240" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section: HTML5 Form -->
+    <section>
+      <h2>Register for Workshop</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label><br>
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="e.g., Jane Doe"><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="e.g., jane@example.com"><br><br>
+
+          <label for="phone">Phone:</label><br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 0712345678"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Workshop Preferences</legend>
+
+          <label for="topic">Choose Topic:</label><br>
+          <select id="topic" name="topic" required>
+            <option value="">--Please choose--</option>
+            <option value="html">Intro to HTML5</option>
+            <option value="responsive">Responsive Layouts</option>
+            <option value="accessibility">Accessibility</option>
+          </select><br><br>
+
+          <label>Experience Level:</label><br>
+          <input type="radio" id="beginner" name="level" value="beginner" required>
+          <label for="beginner">Beginner</label><br>
+
+          <input type="radio" id="intermediate" name="level" value="intermediate">
+          <label for="intermediate">Intermediate</label><br>
+
+          <input type="radio" id="advanced" name="level" value="advanced">
+          <label for="advanced">Advanced</label><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Details</legend>
+
+          <label for="comments">Comments or Questions:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="40" maxlength="250" placeholder="Your message..."></textarea><br><br>
+
+          <input type="checkbox" id="subscribe" name="subscribe" checked>
+          <label for="subscribe">Subscribe to updates</label><br><br>
+
+          <input type="submit" value="Register Now">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Web Training Hub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
